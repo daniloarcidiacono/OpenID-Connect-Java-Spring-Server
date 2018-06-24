@@ -142,13 +142,13 @@ CREATE TABLE IF NOT EXISTS client_details (
 	token_endpoint_auth_method VARCHAR(256),
 	subject_type VARCHAR(256),
 	
-	logo_uri VARCHAR(2048),
-	policy_uri VARCHAR(2048),
-	client_uri VARCHAR(2048),
-	tos_uri VARCHAR(2048),
+	logo_uri TEXT(2048),
+	policy_uri TEXT(2048),
+	client_uri TEXT(2048),
+	tos_uri TEXT(2048),
 
-	jwks_uri VARCHAR(2048),
-	jwks VARCHAR(8192),
+	jwks_uri TEXT(2048),
+	jwks TEXT(8192),
 	sector_identifier_uri VARCHAR(2048),
 	
 	request_object_signing_alg VARCHAR(256),
@@ -169,9 +169,9 @@ CREATE TABLE IF NOT EXISTS client_details (
 	initiate_login_uri VARCHAR(2048),
 	clear_access_tokens_on_refresh BOOLEAN DEFAULT true NOT NULL,
 	
-	software_statement VARCHAR(4096),
-	software_id VARCHAR(2048),
-	software_version VARCHAR(2048),
+	software_statement TEXT(4096),
+	software_id TEXT(2048),
+	software_version TEXT(2048),
 	
 	code_challenge_method VARCHAR(256),
 	
